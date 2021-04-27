@@ -92,6 +92,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+ # Google authentication
 SOCIALACCOUNT_PROVIDERS = {
         'google': {
             'SCOPE': [
