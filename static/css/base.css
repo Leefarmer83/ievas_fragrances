@@ -3,11 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/ievas.png') no repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    background-color: rgb(252, 147, 147);
     color: black;
-    font-family: 'Kaushan';
+    font-family: 'Kaushan Script';
 
 }
 
@@ -19,6 +18,15 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+.picture {
+    background: no-repeat center center fixed;
+}
+
+#topnav {
+    background-color: black;
+}
+
 
 .main-logo-link {
     width: fit-content;
@@ -42,7 +50,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: rgb(252, 147, 147);
 }
 
 .text-black {
