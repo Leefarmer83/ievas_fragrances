@@ -4,6 +4,7 @@ html {
 
 body {
     background-size: cover;
+    height: calc(100vh - 164px);
     background-color: rgb(252, 147, 147);
     color: black;
     font-family: 'Kaushan Script';
@@ -81,6 +82,6 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 130px;
     }
 }
