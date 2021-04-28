@@ -45,7 +45,7 @@ body {
     font-size: 20px;
 }
 
-
+/* Buttons */
 
 .shop-now-button {
     background: rgb(252, 147, 147);
@@ -68,6 +68,22 @@ body {
     color: rgb(252, 147, 147);
 }
 
+/* category styling */
+.category-bg {
+    background: black;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.span
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Black class as Bootstrap does not have */
 .text-black {
     color: #000 !important;
 }
