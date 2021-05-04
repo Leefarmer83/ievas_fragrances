@@ -35,6 +35,11 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
+                 {% if product.weight %}   
+                                    <p class="leaad mb-0 font-weight-bold">Weight: {{ product.weight }}</p>
+                                {% else %}
+                                <p>&nbsp;</p>
+                                {% endif %}
             </div>
             <nav>
                 <div class="nav nav-tabs text-dark" id="nav-tab" role="tablist">

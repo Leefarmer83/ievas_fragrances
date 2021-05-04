@@ -36,7 +36,11 @@
                                 {% endif %}
                                 <div class="card-body pb-0 bg-pink">
                                     <p class="lead mb-0 font-weight-bold">{{ product.name }}</p>
-                                    <p class="mb-0 text-left Oswald">Smells like: {{ product.smells_like }}</p>
+                                 {% if product.smells_like %}   
+                                    <p class="mb-0 Oswald">Smells like: {{ product.smells_like }}</p>
+                                {% else %}
+                                <p>&nbsp;</p>
+                                {% endif %}
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left bg-pink">
                                     <div class="row">
