@@ -117,6 +117,19 @@ a.category-badge > span.badge:hover {
     color: rgb(0, 0, 0) !important;
 }
 
+/*  Scroll to top button */
+
+.btt-button {
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 	
 /*----------Product tab------------------*/
 
