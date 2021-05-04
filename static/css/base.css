@@ -110,7 +110,12 @@ body {
 
 /*  Card Colour */
 
+/*  Badges */
 
+a.category-badge > span.badge:hover {
+    background: rgb(252, 147, 147)!important;
+    color: rgb(0, 0, 0) !important;
+}
 
 	
 /*----------Product tab------------------*/
