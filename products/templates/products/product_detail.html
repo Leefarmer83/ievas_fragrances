@@ -30,23 +30,23 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
-                {% if product.category %}   
-                                    <p class="small mt-1 mb-0">
-                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name}}
-                                        </a>
-                                    </p>
-                                {% endif %}
+                {% if product.category %}
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name}}
+                    </a>
+                </p>
+                {% endif %}
                 {% if product.rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
-                 {% if product.weight %}   
-                                    <p class="leaad mb-0 font-weight-bold">Weight: {{ product.weight }}</p>
-                                {% else %}
-                                <p>&nbsp;</p>
-                                {% endif %}
+                {% if product.weight %}
+                <p class="leaad mb-0 font-weight-bold">Weight: {{ product.weight }}</p>
+                {% else %}
+                <p>&nbsp;</p>
+                {% endif %}
             </div>
             <nav>
                 <div class="nav nav-tabs text-dark" id="nav-tab" role="tablist">
@@ -54,12 +54,13 @@
                         aria-controls="nav-home" aria-selected="true">Product Detail</a>
                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
                         aria-controls="nav-profile" aria-selected="false">Reviews</a>
-                        <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-profile" role="tab"
                         aria-controls="nav-profile" aria-selected="false">Write Review</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">{{ product.description }}
+                <div class="tab-pane fade show active Oswald" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    {{ product.description }}
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-review-tab">...</div>
@@ -68,35 +69,4 @@
     </div>
 </div>
 
-{% endblock %}
-{% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
-    
-    <script type="text/javascript">
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
-
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
-
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
-
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
-
-                window.location.replace(currentUrl);
-            }
-        })
-    </script>
 {% endblock %}
