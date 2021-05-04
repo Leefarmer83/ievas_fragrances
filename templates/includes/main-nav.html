@@ -16,12 +16,13 @@
                 CATEGORY
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="category-link">
-                <a href="" class="dropdown-item">CLEAN &amp; FRESH</a>
-                <a href="" class="dropdown-item">FOOD &amp; DRINK</a>
-                <a href="" class="dropdown-item">FRUITY</a>
-                <a href="" class="dropdown-item">PERFUME</a>
-                <a href="" class="dropdown-item">FLORAL</a>
-                <a href="" class="dropdown-item">WOODY &amp; MUSK</a>
+                <a href="{% url 'products' %}?category=clean_fresh" class="dropdown-item">CLEAN &amp; FRESH</a>
+                <a href="{% url 'products' %}?category=food_drink" class="dropdown-item">FOOD &amp; DRINK</a>
+                <a href="{% url 'products' %}?category=fruity" class="dropdown-item">FRUITY</a>
+                <a href="{% url 'products' %}?category=perfumes" class="dropdown-item">PERFUMES</a>
+                <a href="{% url 'products' %}?category=floral" class="dropdown-item">FLORAL</a>
+                <a href="{% url 'products' %}?category=woody_musk" class="dropdown-item">WOODY &amp; MUSK</a>
+                <a href="{% url 'products' %}?category=clean_fresh,food_drink,fruity,perfumes,floral,woody_musk" class="dropdown-item">All</a>
             </div>
         </li>
 
@@ -30,10 +31,10 @@
                 SPECIALS
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="packages-burner-link">
-                <a href="" class="dropdown-item">PACKAGES</a>
-                <a href="" class="dropdown-item">MELTS &amp; BURNERS</a>
-                <a href="" class="dropdown-item">WAX BURNERS</a>
-                <a href="" class="dropdown-item">ALL</a>
+                <a href="{% url 'products' %}?category=packages" class="dropdown-item">PACKAGES</a>
+                <a href="{% url 'products' %}?category=melts_burners" class="dropdown-item">MELTS &amp; BURNERS</a>
+                <a href="{% url 'products' %}?category=wax_melt_burners" class="dropdown-item">WAX BURNERS</a>
+                <a href="{% url 'products' %}?category=packages,melts_burners,wax_melt_burners" class="dropdown-item">ALL SPECIALS</a>
             </div>
         </li>
 
