@@ -10,6 +10,10 @@ body {
 
 }
 
+.Oswald {
+    font-family: 'Oswald';
+}
+
 /* from Bulma - All icons will be the same size */
 .icon {
     align-items: center;
@@ -92,7 +96,25 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+/* overlay */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/*  Card Colour */
+
+.bg-pink {
+    background-color: rgb(252, 147, 147) !important;
+}
+
+/*  Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
