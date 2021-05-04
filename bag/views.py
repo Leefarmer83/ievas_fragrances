@@ -6,4 +6,3 @@ def view_bag(request):
     """ A view to renders the bag contents page """
 
     return render(request, 'bag/bag.html')
-    
