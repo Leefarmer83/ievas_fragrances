@@ -14,6 +14,10 @@ body {
     font-family: 'Oswald';
 }
 
+.text-size {
+    font-size: 20px;
+}
+
 /* from Bulma - All icons will be the same size */
 .icon {
     align-items: center;
@@ -122,11 +126,6 @@ a.category-badge > span.badge:hover {
     height: 35px;
     width: 35px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-button2 {
     bottom: 10px;
     right: 10px;
 }

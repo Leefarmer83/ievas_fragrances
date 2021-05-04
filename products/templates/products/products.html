@@ -65,7 +65,7 @@
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded border-0">
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -76,25 +76,10 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
-                        <div class="card-body pb-0 bg-pink">
-                            <p class="mb-0 font-weight-bold">{{ product.name }}</p>
-                            {% if product.smells_like %}
-                            <div class="btn-group Oswald">
-                                <button type="button" class="dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    Smells like
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <button class="dropdown-item" type="button">{{ product.smells_like }}</button>
-                                </div>
-                            </div>
-                            {% else %}
-                            <p>&nbsp;</p>
-                            {% endif %}
-                        </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left bg-pink">
                             <div class="row">
                                 <div class="col">
+                                     <p class="font-weight-bold text-center text-size">{{ product.name }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-black Oswald"
