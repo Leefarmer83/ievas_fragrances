@@ -18,6 +18,10 @@ body {
     font-size: 20px;
 }
 
+.product-text {
+    font-size: 30px;
+}
+
 /* from Bulma - All icons will be the same size */
 .icon {
     align-items: center;
