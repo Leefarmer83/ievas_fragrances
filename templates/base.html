@@ -49,7 +49,7 @@
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a class="navbar-brand text-white nav-link main-logo-link" href="{% url 'home' %}">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <img src="media/White.png" width="150" height="100" class="d-inline-block align-top" alt="Company Logo"
                         loading="lazy">
                 </a>
@@ -122,11 +122,12 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
+        <!--
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+            <div class="col bg-pink">
+                <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
-        </div>
+        </div>-->
     </header>
 
     {% if messages %}

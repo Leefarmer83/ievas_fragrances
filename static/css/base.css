@@ -76,6 +76,13 @@ body {
     color: rgb(252, 147, 147);
 }
 
+.btn-outline-black {
+    background: rgb(252, 147, 147);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+
+}
+
 /* category styling */
 .category-bg {
     background: black;
