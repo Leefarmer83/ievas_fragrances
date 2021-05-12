@@ -4,7 +4,7 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    background-color: rgb(252, 147, 147);
+    background-color: pink;
     color: black;
     font-family: 'Kaushan Script';
 
@@ -60,13 +60,13 @@ body {
 /* Buttons */
 
 .shop-now-button {
-    background: rgb(252, 147, 147);
+    background: pink;
     color: rgb(0, 0, 0);
     min-width: 260px;
 }
 
 .btn-black {
-    background: rgb(252, 147, 147);
+    background: pink;
     color: rgb(0, 0, 0);
 }
 
@@ -77,11 +77,11 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: rgb(252, 147, 147);
+    color: pink;
 }
 
 .btn-outline-black {
-    background: rgb(252, 147, 147);
+    background: pink;
     color: rgb(0, 0, 0);
     border: 2px solid black;
 
@@ -90,6 +90,10 @@ body {
 /* category styling */
 .category-bg {
     background: black;
+}
+
+.category2-bg {
+    background: pink;
 }
 
 .navbar-light .navbar-toggler {
@@ -127,7 +131,7 @@ body {
 /*  Badges */
 
 a.category-badge > span.badge:hover {
-    background: rgb(252, 147, 147)!important;
+    background: pink!important;
     color: rgb(0, 0, 0) !important;
 }
 
@@ -192,7 +196,7 @@ a.category-badge > span.badge:hover {
 }
 
 .bg-pink {
-    background-color: rgb(252, 147, 147) !important;
+    background-color: pink !important;
 }
 
 /*  Review section */
