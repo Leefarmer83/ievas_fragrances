@@ -195,6 +195,9 @@ a.category-badge > span.badge:hover {
     background-color: rgb(252, 147, 147) !important;
 }
 
+/*  Review section */
+
+
 /*  toast messages */
 
 .message-container {
@@ -238,7 +241,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 130px;
+        padding-top: 164px;
     }
 }
 
