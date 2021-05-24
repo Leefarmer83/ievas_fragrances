@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -79,7 +79,7 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left bg-pink">
                             <div class="row">
                                 <div class="col">
-                                     <p class="font-weight-bold text-center text-size">{{ product.name }}</p>
+                                    <p class="font-weight-bold text-center text-size">{{ product.name }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-black Oswald"
@@ -96,11 +96,11 @@
                                     <small class="text-black Oswald">No Rating</small>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
-                                                <small class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </small>
-                                            {% endif %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
