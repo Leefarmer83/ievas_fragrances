@@ -31,7 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ievas-fragrances.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
