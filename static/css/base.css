@@ -22,6 +22,10 @@ body {
     font-size: 30px;
 }
 
+.imgsize {
+    height: calc(100vh - 164px);
+}
+
 /* from Bulma - All icons will be the same size */
 .icon {
     align-items: center;
