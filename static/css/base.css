@@ -344,18 +344,24 @@ input[name='q']::placeholder {
         padding-top: 116px;
     }
 
-    .carousel-caption {
-    margin: 2%;
-    background: rgb(0, 0, 0, 0.6);
-    padding: 50px;
-}
-
 .carousel-caption h5{
-    font-size: 50px;
+    font-size: 28px;
 }
 
 .carousel-caption p{
     font-size: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 3%;
+    bottom: 1px;
+    left: 3%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
 }
 
     body {
@@ -391,4 +397,27 @@ input[name='q']::placeholder {
     color: rgb(0, 0, 0);
     min-width: 60%;
     }
+    .imgsize {
+    height: calc(64vh - 164px);
+    }
+    .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 29%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+    }
+    .pb-3, .py-3 {
+    padding: 0rem!important;
+}
 }
