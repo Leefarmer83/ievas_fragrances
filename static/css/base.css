@@ -96,10 +96,6 @@ body {
     background: black;
 }
 
-.category2-bg {
-    background: pink;
-}
-
 .navbar-light .navbar-toggler {
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
@@ -334,7 +330,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 210px;
     }
 }
 
@@ -368,7 +364,7 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
+    .display-4.text-black {
         font-size: .1rem;
     }
 
