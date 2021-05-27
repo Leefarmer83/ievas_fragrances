@@ -290,6 +290,14 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
+/* newsletter */
+
+.field.has-addons {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Product Form */
 
 .btn-file {
@@ -381,7 +389,7 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
+    #newsletter-wrapper h2 {
         font-size: .9rem;
     }
 

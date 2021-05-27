@@ -1,0 +1,15 @@
+<div class="container">
+<div class="bg-white">
+    <h2>
+        join us
+    </h2>
+    <p>
+        <form method="POST" action="{% url 'add_subscriber' %}">{% csrf_token%}
+            {{ subscribe_form }}
+        <input type="submit" value="Subscriber" class="btn btn-default" />
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+        </form>
+    </p>
+</div>
+</div>
+

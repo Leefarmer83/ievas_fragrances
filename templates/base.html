@@ -117,12 +117,10 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-         <div id="delivery-banner" class="row text-center btn-outline-black">
-            <div class="Oswald col bg-white text-black bg-pink">
-                <h4 class="my-1">Sign up for our Newsletter</h4>                
-            </div>            
-        </div> 
+        {% include 'includes/newsletter.html' %}
     </header>
+
+     
 
      {% if messages %}
         <div class="message-container">
