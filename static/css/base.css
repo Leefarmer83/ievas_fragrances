@@ -4,10 +4,15 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    background-color: black;
+    background-color: white;
     color: black;
     font-family: 'Kaushan Script';
+    background-image: radial-gradient(pink, rgb(255, 238, 241), white);
 
+}
+
+.bg-black {
+    background-color: black;
 }
 
 .Oswald {
@@ -23,7 +28,7 @@ body {
 }
 
 .imgsize {
-    height: calc(100vh - 164px);
+    height: calc(85vh - 164px);
 }
 
 /* from Bulma - All icons will be the same size */
@@ -207,6 +212,10 @@ input[name='q']::placeholder {
     background-color: pink !important;
 }
 
+.bg-light {
+    background-color: black!important;
+}
+
 /*  Review section */
 
 
@@ -293,7 +302,6 @@ input[name='q']::placeholder {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
-
 
 /* Product Form */
 
