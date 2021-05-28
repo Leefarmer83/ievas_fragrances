@@ -41,6 +41,10 @@ body {
     background-color: black;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* Logo */
 .main-logo-link {
     width: fit-content;

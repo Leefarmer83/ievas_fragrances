@@ -1,0 +1,17 @@
+{% load static i18n %}
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="text-center">
+            <h4 class="">Subscribe to our newsletter</h4>
+        </div>
+        <p class="text-center">Please subscribe to our newsletter using a unique email</p>
+        <form method="post" action="{% url 'add_subscriber_form' %}" class="text-center js-add-subscriber-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="mb-2 text-center">
+                <button type="submit" class="btn btn-info" id="add-button">{% trans "subscribe" %}</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /.modal-content -->

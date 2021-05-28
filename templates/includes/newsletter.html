@@ -4,11 +4,9 @@
         <p>
             <form method="POST" class="field has-addons ml-2 newsletter-wrapper " action="{% url 'add_subscriber' %}">{% csrf_token%}
                 {{ subscribe_form }}
-                <input type="submit" value="Subscribe" class="newsletter-wrapper form-control btn btn-black border border-black rounded-0" />
+                <input disabled type="submit" value="Subscribe" class=" newsletter-wrapper form-control btn btn-black border border-black rounded-0" />
                 <input class="field has-addons" type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
         </p>
     </div>
 </div>
-
-
