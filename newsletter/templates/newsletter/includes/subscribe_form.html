@@ -1,6 +1,6 @@
 {% load static i18n %}
-<div class="modal-content">
-    <div class="modal-body">
+<div class="modal-content Oswald">
+    <div class="modal-body bg-pink">
         <div class="text-center">
             <h4 class="">Subscribe to our newsletter</h4>
         </div>
@@ -9,7 +9,7 @@
             {% csrf_token %}
             {{ form|crispy }}
             <div class="mb-2 text-center">
-                <button type="submit" class="btn btn-info" id="add-button">{% trans "subscribe" %}</button>
+                <button type="submit" class="btn btn-black border border-black rounded-0" id="add-button">{% trans "subscribe" %}</button>
             </div>
         </form>
     </div>
