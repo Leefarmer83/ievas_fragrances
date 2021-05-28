@@ -4,7 +4,7 @@
         <div class="text-center">
             <h4 class="">Subscribe to our newsletter</h4>
         </div>
-        <p class="text-center">Please subscribe to our newsletter using a unique email</p>
+        <p class="text-center">Sign Up for Offers & Updates</p>
         <form method="post" action="{% url 'add_subscriber_form' %}" class="text-center js-add-subscriber-form">
             {% csrf_token %}
             {{ form|crispy }}
