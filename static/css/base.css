@@ -389,7 +389,7 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #newsletter-wrapper h2 {
+    .newsletter-wrapper h2 {
         font-size: .9rem;
     }
 

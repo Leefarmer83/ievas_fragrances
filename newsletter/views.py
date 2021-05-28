@@ -1,5 +1,6 @@
 from newsletter.forms import SubscriberForm
 from django.shortcuts import redirect
+from django.contrib import messages
 
 
 def add_subscriber(request):
@@ -9,4 +10,5 @@ def add_subscriber(request):
         form = SubscriberForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully subscribed')
     return redirect(redirect_url)
