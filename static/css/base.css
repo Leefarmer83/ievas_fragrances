@@ -216,6 +216,10 @@ input[name='q']::placeholder {
     background-color: black!important;
 }
 
+.prate {
+    margin-bottom: 0rem;
+}
+
 /*  Review section */
 
 
