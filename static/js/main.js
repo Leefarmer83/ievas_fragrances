@@ -61,6 +61,7 @@ $(document).ready(function () {
                    // $("#base-modal").modal("hide");
                    $("#base-modal .modal-dialog").html(data.html_success);
                    $("#nav-reviews").html(data.html_review);
+                   $("#product-rating").html(data.html_rating);
                 } else {
                     $("#base-modal .modal-dialog").html(data.html_modal);
                 }

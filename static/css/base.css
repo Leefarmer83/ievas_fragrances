@@ -222,6 +222,11 @@ input[name='q']::placeholder {
 
 /*  Review section */
 
+.reviews-height {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
 
 /*  toast messages */
 

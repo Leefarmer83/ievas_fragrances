@@ -31,6 +31,11 @@ def add_review_form(request, product_id):
                 request=request,
                 context={"product": product}
             )
+            data["html_rating"] = render_to_string(
+                "products/includes/product_rating.html",
+                request=request,
+                context={"product": product}
+            )
         else:
             data["form_is_valid"] = False
     else:
