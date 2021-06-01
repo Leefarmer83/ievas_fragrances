@@ -30,7 +30,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "")
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = "DEVELOPMENT" in os.environ
+if 'DEVELOPMENT' in os.environ:
+    DEBUG = True 
+else: 
+    DEBUG = False
 
 ALLOWED_HOSTS = ["ievas-fragrances.herokuapp.com", "localhost"]
 
@@ -55,7 +58,6 @@ INSTALLED_APPS = [
     "profiles",
     "newsletter",
     "reviews",
-    
     # Other Apps
     "crispy_forms",
     "storages",
