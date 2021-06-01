@@ -23,8 +23,13 @@ def add_review_form(request, product_id):
             data["form_is_valid"] = True
             
             data["html_success"] = render_to_string(
-                "newsletter/includes/review_success.html",
+                "reviews/includes/review_success.html",
                 request=request,
+            )
+            data["html_review"] = render_to_string(
+                "products/includes/product_reviews.html",
+                request=request,
+                context={"product": product}
             )
         else:
             data["form_is_valid"] = False

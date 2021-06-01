@@ -53,55 +53,7 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
                  <nav>
-                <div class="nav Oswald nav-tabs text-black" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link text-black active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                        role="tab" aria-controls="nav-home" aria-selected="true">Product Detail</a>
-                    <a class="nav-item text-black nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                        role="tab" aria-controls="nav-profile" aria-selected="false">Reviews</a>
-                    <a class="nav-item text-black nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-profile"
-                        role="tab" aria-controls="nav-profile" aria-selected="false">Write Review</a>
-                </div>
-            </nav>
-            <div class="tab-content mt-3" id="nav-tabContent">
-                <div class="tab-pane fade show active Oswald text-muted" id="nav-home" role="tabpanel"
-                    aria-labelledby="nav-home-tab">
-                    {{ product.description }}
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
-                    <!-- Review Card -->
-                {% if product.reviews.count > 0 %}
-                {% for review in product.reviews.all %}
-                <div class="card card-body mb-2">
-                    <!-- Review Rating -->
-                    <p class="review-card-content"><small>{{ review.review_rating }} / 5 <i class="fas fa-star"></i></small></p>
-                    <!-- Review User and Date-->
-                    <p><small class="text-muted">{{ review.user_profile }} | {{ review.created_on }}</small></p>
-                    <!-- Review Title -->
-                    <h5 class="card-title">{{ review.review_title }}</h5>
-                    <!-- Reivew Content -->
-                    <p class="card-text">{{ review.review_content }}</p>
-                
-                {% endfor %}
-                {% else %}
-                    {% if request.user.is_authenticated %}
-                    <!-- If no review -->
-                        <div class="card card-body mb-2">
-                            <h5 class="card-title">This product does not currently have any reviews</h5>
-                            <p class="card-text">Already purchased this product? Please help others and add a review.</p>
-                            <button class="js-add-review" data-url="{% url 'add_review' product.id %}">
-                                add review
-                            </button>
-                        </div>
-                    {% else %}
-                        <!-- If no review -->
-                        <div class="card card-body mb-2">
-                            <h5 class="card-title">This product does not currently have any reviews</h5>
-                            <p class="card-text">Already purchased this product? Please login to add a review</p>
-                        </div>
-                    {% endif %}
-                {% endif %}
-            </div>
+                      <div>
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row Oswald">
@@ -142,8 +94,48 @@
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
-            </form>
+                </form>
             </div>
+                <div class="nav Oswald nav-tabs text-black" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link text-black active" id="nav-home-tab" data-toggle="tab" href="#nav-description"
+                        role="tab" aria-controls="nav-description" aria-selected="true">Product Detail</a>
+
+                    <a class="nav-item text-black nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-reviews"
+                        role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>
+
+                    <a class="nav-item text-black nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-write-review"
+                        role="tab" aria-controls="nav-write-review" aria-selected="false">Write Review</a>
+                </div>
+            </nav>
+            <div class="tab-content mt-3" id="nav-tabContent">
+                <div class="tab-pane fade show active Oswald text-muted" id="nav-description" role="tabpanel"
+                    aria-labelledby="nav-home-tab">
+                    {{ product.description }}
+                </div>
+                <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews">
+                    {% include 'products/includes/product_reviews.html' %}
+                </div>
+                <div class="tab-pane fade Oswald text-muted" id="nav-write-review" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        {% if request.user.is_authenticated %}
+                        <!-- If no review -->
+                        <div class="card card-body mb-2">
+                            <!-- <h5 class="card-title">This product does not currently have any reviews</h5> -->
+                            <p class="card-text">Already purchased this product? Please help others and add a review.</p>
+                            <button class="js-add-review" data-url="{% url 'add_review' product.id %}">
+                                add review
+                            </button>
+                        </div>
+                        {% else %}
+                            <!-- If no review -->
+                            <div class="card card-body mb-2">
+                                <!-- <h5 class="card-title">This product does not currently have any reviews</h5> -->
+                                <p class="card-text">Already purchased this product? Please login to add a review</p>
+                            </div>
+                        {% endif %}
+                </div>
+            </div>
+           
 
             
         </div>

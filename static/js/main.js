@@ -60,6 +60,7 @@ $(document).ready(function () {
                 if (data.form_is_valid) {
                    // $("#base-modal").modal("hide");
                    $("#base-modal .modal-dialog").html(data.html_success);
+                   $("#nav-reviews").html(data.html_review);
                 } else {
                     $("#base-modal .modal-dialog").html(data.html_modal);
                 }
