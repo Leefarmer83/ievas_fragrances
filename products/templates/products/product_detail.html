@@ -84,11 +84,22 @@
                 
                 {% endfor %}
                 {% else %}
-                <!-- If no review -->
-                <div class="card card-body mb-2">
-                    <h5 class="card-title">This product does not currently have any reviews</h5>
-                    <p class="card-text">Already purchased this product? Please help others and add a review</p>
-                </div>
+                    {% if request.user.is_authenticated %}
+                    <!-- If no review -->
+                        <div class="card card-body mb-2">
+                            <h5 class="card-title">This product does not currently have any reviews</h5>
+                            <p class="card-text">Already purchased this product? Please help others and add a review.</p>
+                            <button class="js-add-review" data-url="{% url 'add_review' product.id %}">
+                                add review
+                            </button>
+                        </div>
+                    {% else %}
+                        <!-- If no review -->
+                        <div class="card card-body mb-2">
+                            <h5 class="card-title">This product does not currently have any reviews</h5>
+                            <p class="card-text">Already purchased this product? Please login to add a review</p>
+                        </div>
+                    {% endif %}
                 {% endif %}
             </div>
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">

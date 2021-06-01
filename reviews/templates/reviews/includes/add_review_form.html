@@ -1,0 +1,16 @@
+{% load static i18n %}
+<div class="modal-content Oswald">
+    <div class="modal-body bg-pink">
+        <div class="text-center">
+            <h4 class="">Add Review</h4>
+        </div>
+        <form method="post" action="{% url 'add_review_form' product_id %}" class="text-center js-add-review-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="mb-2 text-center">
+                <button type="submit" class="btn btn-black border border-black rounded-0" id="add-button">{% trans "Add Review" %}</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /.modal-content -->

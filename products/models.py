@@ -23,7 +23,6 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     weight = models.CharField(max_length=50, null=True, blank=True)
     description = models.TextField()
-    smells_like = models.TextField(max_length=50, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True

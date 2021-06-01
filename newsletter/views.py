@@ -5,7 +5,7 @@ from django.template.loader import render_to_string
 
 def add_subscriber(request):
     data = dict()
-    form = SubscriberForm
+    form = SubscriberForm()
     context = {"form": form}
     data["html_modal"] = render_to_string(
         "newsletter/includes/subscribe_form.html",
