@@ -39,5 +39,5 @@ class Review(models.Model):
         return self.review_title
 
     def save(self, *args, **kwargs):
-        self.product.calculate_rating()
         super().save(*args, **kwargs)
+        self.product.calculate_rating()

@@ -19,9 +19,9 @@ def add_review_form(request, product_id):
             instance.user_profile = user_profile
             instance.product = product
             instance.save()
-            
+
             data["form_is_valid"] = True
-            
+
             data["html_success"] = render_to_string(
                 "reviews/includes/review_success.html",
                 request=request,
@@ -29,12 +29,12 @@ def add_review_form(request, product_id):
             data["html_review"] = render_to_string(
                 "products/includes/product_reviews.html",
                 request=request,
-                context={"product": product}
+                context={"product": product},
             )
             data["html_rating"] = render_to_string(
                 "products/includes/product_rating.html",
                 request=request,
-                context={"product": product}
+                context={"product": product},
             )
         else:
             data["form_is_valid"] = False
