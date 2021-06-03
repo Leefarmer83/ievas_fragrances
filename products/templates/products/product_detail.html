@@ -26,11 +26,11 @@
                 {% endif %}
             </div>
             {% if request.user.is_superuser %}
-                <small>
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                </small>
-                {% endif %}
+            <small>
+                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+            </small>
+            {% endif %}
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container Oswald mb-2 mt-md-3">
@@ -50,101 +50,100 @@
                 <div id="product-rating">
                     {% include 'products/includes/product_rating.html' %}
                 </div>
-                 <nav>
-                      <div>
-                <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-                {% csrf_token %}
-                <div class="form-row Oswald">
-                    <div class="col-12">
-                        <p class="mt-3 text-size"><strong>Quantity:</strong></p>
-                        <div class="form-group w-50">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button class="decrement-qty btn btn-black rounded-0"
-                                        data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                        <span class="icon">
-                                            <i class="fas fa-minus"></i>
-                                        </span>
-                                    </button>
+                <nav>
+                    <div>
+                        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row Oswald">
+                                <div class="col-12">
+                                    <p class="mt-3 text-size"><strong>Quantity:</strong></p>
+                                    <div class="form-group w-50">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="decrement-qty btn btn-black rounded-0"
+                                                    data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                    <span class="icon">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control qty_input" type="number" name="quantity"
+                                                value="1" min="1" max="99" data-item_id="{{ product.id }}"
+                                                id="id_qty_{{ product.id }}">
+                                            <div class="input-group-append">
+                                                <button class="increment-qty btn btn-black rounded-0"
+                                                    data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                    <span class="icon">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
-                                    max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
-                                <div class="input-group-append">
-                                    <button class="increment-qty btn btn-black rounded-0"
-                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+
+                                <div class="col-12 mb-3">
+                                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="icon">
-                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-chevron-left"></i>
                                         </span>
-                                    </button>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-black rounded-0 btn-lg text-uppercase"
+                                        value="Add to Bag">
                                 </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    <div class="nav Oswald nav-tabs text-black" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link text-black active" id="nav-home-tab" data-toggle="tab"
+                            href="#nav-description" role="tab" aria-controls="nav-description"
+                            aria-selected="true">Product Detail</a>
 
-                    <div class="col-12 mb-3">
-                        <a href="{% url 'products' %}" class="btn btn-black rounded-0 btn-lg">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Keep Shopping</span>
-                        </a>
-                        <input type="submit" class="btn btn-black rounded-0 btn-lg text-uppercase" value="Add to Bag">
+                        <a class="nav-item text-black nav-link" id="nav-profile-tab" data-toggle="tab"
+                            href="#nav-reviews" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>
+
+                        <a class="nav-item text-black nav-link" id="nav-review-tab" data-toggle="tab"
+                            href="#nav-write-review" role="tab" aria-controls="nav-write-review"
+                            aria-selected="false">Write Review</a>
                     </div>
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                </div>
-                </form>
-            </div>
-                <div class="nav Oswald nav-tabs text-black" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link text-black active" id="nav-home-tab" data-toggle="tab" href="#nav-description"
-                        role="tab" aria-controls="nav-description" aria-selected="true">Product Detail</a>
-
-                    <a class="nav-item text-black nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-reviews"
-                        role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>
-
-                    <a class="nav-item text-black nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-write-review"
-                        role="tab" aria-controls="nav-write-review" aria-selected="false">Write Review</a>
-                </div>
-            </nav>
-            <div class="tab-content mt-3" id="nav-tabContent">
-                <div class="tab-pane fade show active Oswald text-muted" id="nav-description" role="tabpanel"
-                    aria-labelledby="nav-home-tab">
-                    {{ product.description }}
-                </div>
-                <div class="tab-pane fade reviews-height" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews">
-                    {% include 'products/includes/product_reviews.html' %}
-                </div>
-                <div class="tab-pane fade Oswald text-muted" id="nav-write-review" role="tabpanel"
+                </nav>
+                <div class="tab-content mt-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active Oswald text-muted" id="nav-description" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        {{ product.description }}
+                    </div>
+                    <div class="tab-pane fade reviews-height" id="nav-reviews" role="tabpanel"
+                        aria-labelledby="nav-reviews">
+                        {% include 'products/includes/product_reviews.html' %}
+                    </div>
+                    <div class="tab-pane fade Oswald text-muted" id="nav-write-review" role="tabpanel"
                         aria-labelledby="nav-home-tab">
                         {% if request.user.is_authenticated %}
                         <!-- If no review -->
                         <div class="card card-body mb-2">
-                            <!-- <h5 class="card-title">This product does not currently have any reviews</h5> -->
-                            <p class="card-text">Already purchased this product? Please help others and add a review.</p>
-                            <button class="js-add-review" data-url="{% url 'add_review' product.id %}">
+                            <p class="card-text">Already purchased this product? Please help others and add a review.
+                            </p>
+                            <button class="js-add-review btn btn-black btn-outline-black rounded-0"
+                                data-url="{% url 'add_review' product.id %}">
                                 add review
                             </button>
                         </div>
                         {% else %}
-                            <!-- If no review -->
-                            <div class="card card-body mb-2">
-                                <!-- <h5 class="card-title">This product does not currently have any reviews</h5> -->
-                                <p class="card-text">Already purchased this product? Please login to add a review</p>
-                            </div>
+                        <!-- If no review -->
+                        <div class="card card-body mb-2">
+                            <p class="card-text">Already purchased this product? Please login to add a review</p>
+                        </div>
                         {% endif %}
-                </div>
-            </div>
-           
-
-            
-        </div>
-    </div>
-                
-
-            
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
 </div>
 
 {% endblock %}

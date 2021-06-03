@@ -17,8 +17,8 @@
                     <!-- If no review -->
                         <div class="card card-body mb-2">
                             <h5 class="card-title">This product does not currently have any reviews</h5>
-                            <p class="card-text">Already purchased this product? Please help others and add a review.</p>
-                            <button class="js-add-review" data-url="{% url 'add_review' product.id %}">
+                            <p class="card-text text-muted">Already purchased this product? Please help others and add a review.</p>
+                            <button class="js-add-review btn btn-black btn-outline-black rounded-0" data-url="{% url 'add_review' product.id %}">
                                 add review
                             </button>
                         </div>
@@ -26,7 +26,7 @@
                         <!-- If no review -->
                         <div class="card card-body mb-2">
                             <h5 class="card-title">This product does not currently have any reviews</h5>
-                            <p class="card-text">Already purchased this product? Please login to add a review</p>
+                            <p class="card-text text-muted">Already purchased this product? Please login to add a review</p>
                         </div>
                     {% endif %}
                 {% endif %}
