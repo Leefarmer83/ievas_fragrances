@@ -35,9 +35,9 @@ class Product(models.Model):
         """
         Calculate rating from reviews
         """
-        self.rating = self.reviews.aggregate(Avg("review_rating")).get(
-            "review_rating__avg"
-        )
+        self.rating = self.reviews.aggregate(
+            Avg("review_rating", decimal_places=2)
+        ).get("review_rating__avg")
         self.save()
 
     def __str__(self):
