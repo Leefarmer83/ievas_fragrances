@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    
+
     {% endblock %}
 
     {% block extra_css %}
@@ -28,12 +28,17 @@
 
 
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -41,12 +46,14 @@
 
     <title>Ieva Fragrances {% block extra_title %}{% endblock %}</title>
 </head>
+
 <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="{{ MEDIA_URL }}White.png" width="150" height="100" class="d-inline-block align-top" alt="Company Logo">
+                    <img src="{{ MEDIA_URL }}White.png" width="150" height="100" class="d-inline-block align-top"
+                        alt="Company Logo">
                 </a>
 
             </div>
@@ -75,16 +82,16 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -108,7 +115,8 @@
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100 category-bg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon">
                         <i class="fas fa-bars black-text"></i>
                     </span>
@@ -119,23 +127,23 @@
         </div>
     </header>
 
-    
-     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -143,7 +151,7 @@
 
     {% block content %}
     {% endblock %}
-    
+
     {% include 'includes/modal.html' %}
 
     {% block postloadjs %}
@@ -154,67 +162,66 @@
 </body>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted Oswald">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-pink"
-  >
-    <!-- center -->
-    <div class="col">
-      <a href="https://www.facebook.com" target="_blank" class="text-black m-4">
-        <i class=" center-text fab fa-facebook-f"></i>
-      </a>
-      <a href="https://twitter.com/?lang=en-gb" class="text-black m-4" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.google.co.uk/" class=" text-black m-4" target="_blank">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" class="text-black m-4 ">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="bg-black text-white">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            </i>Ieva's Fragrrances
-          </h6>
-          <p>
-            Family run business who take joy and pride in deliverying fragrances to our customers households.
-          </p>
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-pink">
+        <!-- center -->
+        <div class="col">
+            <a href="https://www.facebook.com" target="_blank" class="text-black m-4">
+                <i class=" center-text fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/?lang=en-gb" class="text-black m-4" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.google.co.uk/" class=" text-black m-4" target="_blank">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-black m-4 ">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contact
-          </h6>
-          <p><i class="fas fa-home me-3"></i> Towcester, United Kingdom</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            Contact@ievasfragrances.co.uk
-          </p>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4 bg-white" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright: Lee Farmer
-  </div>
-  <!-- Copyright -->
+    <!-- Section: Links  -->
+    <section class="bg-black text-white">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        </i>Ieva's Fragrrances
+                    </h6>
+                    <p>
+                        Family run business who take joy and pride in deliverying fragrances to our customers
+                        households.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Towcester, United Kingdom</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        Contact@ievasfragrances.co.uk
+                    </p>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 bg-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright: Lee Farmer
+    </div>
+    <!-- Copyright -->
 </footer>
 <!-- Footer -->
 

@@ -2,11 +2,13 @@
     <div class="col my-auto py-1 py-lg-0 newsletter-wrapper">
         <h2>Subscribe to our newsletter</h2>
         <p>
-            <form method="POST" class="field has-addons ml-2 newsletter-wrapper " action="{% url 'add_subscriber' %}">{% csrf_token%}
-                {{ subscribe_form }}
-                <input disabled type="submit" value="Subscribe" class=" newsletter-wrapper form-control btn btn-black border border-black rounded-0" />
-                <input class="field has-addons" type="hidden" name="redirect_url" value="{{ request.path }}">
-            </form>
+        <form method="POST" class="field has-addons ml-2 newsletter-wrapper " action="{% url 'add_subscriber' %}">
+            {% csrf_token%}
+            {{ subscribe_form }}
+            <input disabled type="submit" value="Subscribe"
+                class=" newsletter-wrapper form-control btn btn-black border border-black rounded-0" />
+            <input class="field has-addons" type="hidden" name="redirect_url" value="{{ request.path }}">
+        </form>
         </p>
     </div>
 </div>
