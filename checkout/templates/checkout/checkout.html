@@ -101,6 +101,10 @@
 							{% endif %}
 						</div>
                     </fieldset>
+                    <fieldset class="rounded px-3 mb-5 Oswald">
+                        <legend class="fieldset-label small text-black px-2 w-auto">Special Instruction</legend>
+                        {{ order_form.special_instructions | as_crispy_field }}
+                    </fieldset>
                     <fieldset class="px-3 Oswald">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->

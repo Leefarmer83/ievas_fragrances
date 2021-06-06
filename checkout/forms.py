@@ -15,6 +15,7 @@ class OrderForm(forms.ModelForm):
             "postcode",
             "country",
             "county",
+            "special_instructions",
         )
 
     def __init__(self, *args, **kwargs):
@@ -32,6 +33,7 @@ class OrderForm(forms.ModelForm):
             "street_address1": "Street Address 1",
             "street_address2": "Street Address 2",
             "county": "County",
+            "special_instructions": "Please state what Wax melts you would like if your order has a package or wax and burner mix",
         }
 
         self.fields["full_name"].widget.attrs["autofocus"] = True

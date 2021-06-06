@@ -18,6 +18,7 @@ class OrderAdmin(admin.ModelAdmin):
         "grand_total",
         "original_bag",
         "stripe_pid",
+        
     )
 
     fields = (
@@ -38,6 +39,7 @@ class OrderAdmin(admin.ModelAdmin):
         "grand_total",
         "original_bag",
         "stripe_pid",
+        "special_instructions",
     )
 
     list_display = (
@@ -47,6 +49,7 @@ class OrderAdmin(admin.ModelAdmin):
         "order_total",
         "delivery_cost",
         "grand_total",
+        "special_instructions",
     )
 
     ordering = ("-date",)
