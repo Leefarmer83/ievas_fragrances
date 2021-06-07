@@ -243,15 +243,78 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+## Deployment
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+### Create A Project
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+Gitpod
+- Python3 to run application
+- PIP to install all app requirements
+    - Django  
+- Heroku account
 
+
+Use template provided by [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template). Create new repository from template page then proceed with `git add .` to add all files to the staging area. Then commit with the command `git commit -m "Initial commit"` then `git push` - This command is used to push all committed changes to the GitHub repository.
+
+### Deployment to Heroku
+
+1. Navigate to Heroku.com and login or register for a profile.
+1. Select to create new app and put in a unique name.
+1. Select region closest to you.
+
+**Set up connection to Github Repository:**
+
+1. Once the app is created, navigate to the deploy tab.
+1. Select GitHub - Connect to GitHub to connect heroku to your github where the repository to deploy is stored.
+1. Find the github repository to connect to.
+1. Enter the repository name for the project you wish to deplot and click search.
+1. Once the repo has been found, click the connect button.
+
+
+**Add PostgreSQL Database:**
+
+1. Along the navigation bar at the top, go to the resources tab.
+1. Under Add-ons search for Heroku Postgres and then select it.
+1. Select the free hobby plan unless you wish to move to a paid option.
+
+**Set environment variables:**
+
+1. The project uses a number of environment variables to keep sensitive information hidden.
+
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- DATABASE_URL
+- EMAIL_HOST_PASS
+- EMAIL_HOST_USER
+- SECRET_KEY
+- STRIPE_PUBLIC_KEY
+- STRIPE_SECRET_KEY
+- STRIPE_WH_SECRET
+- USE_AWS
+
+Values are not shown.
+
+**Enable automatic deployment:**
+1. If you would like there is an option to enable automatic deploys when you push to github.
+1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+### Run Locally
+
+1. Navigate to the GitHub [Repository](https://github.com/leefarmer83/ievas_fragrances).
+1. Select the Code drop down menu.
+1. You now have options to either download tahe ZIP file and open with your choice of IDE or you can copy Git URL from the HTTPS dialogue box which is [here](https://github.com/leefarmer83/ievas_fragrances).
+1. Open your IDE of choice and open you CLI in a directory of your choice.
+1. Use the `git clone` command in said CLI followed by the copied git URL which will enable you to clone the project.
+1. Once the project is in your IDE, run the following command in the CLI to install all the required packages - `pip install -r requirements.txt`.
+1. As stated in deploying to Heroku the project requires a number of environment variables to work, these can be set globally in your environment or as this project uses environ you can create a **.env** file in the same location as the **.env.example**, this is located in core.settings.
+
+### Stripe and AWS Setup
+
+You will also need to set yourself up with a stripe account to handle payments and an AWS to host the static files.
+
+[AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-up-s3.html)
+
+[Stripe Documentation](https://stripe.com/docs)
 
 ## Credits
 
