@@ -11,21 +11,6 @@ This app was built using [GitHub](https://pages.github.com/) and deployed to [He
     - [User Stories](#user-stories)
     - [Project Wireframe and Design Process](#Project-Wireframe-and-Design-Process)
 - [Features](#features)
-    - [base.html](#basehtml)
-    - [index.html (Home)](#indexhtml-home)
-    - [register.html](#registerhtml)
-    - [login.html](#loginhtml)
-    - [profile.html](#profilehtml)
-    - [words.html](#wordshtml)
-    - [word_cat.html](#word_catshtml)
-    - [add_words.html](#addwordshtml)
-    - [my_words.html](#mywordshtml)
-    - [pronunciation.html](#pronunciationhtml)
-    - [add_category.html](#add_categoryhtml)
-    - [edit_category.html](#edit_categoryhtml)
-    - [edit_words.html](#edit_wordshtml)
-    - [manage_categories](#mdmanage_categorieshtml)
-    - [Future Features](#future_features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -90,9 +75,6 @@ This site aims to give users an opportunity to transform their environment throu
     - [Order Summary](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Order_Summary_Page.png)
 
 # Design
-
-
-
 
 ## Features
 
@@ -205,13 +187,30 @@ By clicking on the subscribe button the user is asked for their email address. O
 - Order confirmatiuon email to the store owner.
 - Create a functionality for the owner to give discount codes to its users.
 - Paginmation - On bothe the products page and review tab.
+- Social media login.
+- In stock messaging.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+* [Gitpod](https://www.gitpod.io/) is the IDE used for developing this project.
+* [Django](https://www.djangoproject.com/) as python web framework for rapid development and clean design.
+* [Stripe](https://stripe.com/gb) as payment platform to validate and accept credit card payments securely.
+* [AWS S3 Bucket](https://aws.amazon.com/)  to store static files and images entered into the database.
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style django forms.
+* [Heroku](https://www.gitpod.io/) Heroku for deployment
+* [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
+* [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+* [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
+* [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
+* [Github](https://github.com/) to store and share all project code remotely.
+* [Canva](https://www.canva.com/) to resize images. 
+* [Balsamiq/](https://balsamiq.com/)to create the wireframes for this project.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+### Databases
+[PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
+[SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
+
 
 
 ## Testing
