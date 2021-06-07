@@ -1,3 +1,4 @@
+![Ieva's Fragrances Logo ](/media/ievalogo.png)
 # Milestone Project 4 - Ieva's Fragrances
 
 This app was built using [GitHub](https://pages.github.com/) and deployed to [Heroku](https://www.heroku.com/).
