@@ -77,6 +77,11 @@ This site aims to give users an opportunity to transform their environment throu
 
 # Design
 
+## Database Structure
+![Database Structure ](/assets/readme_images/database_structure.png)
+
+- [Database Structure](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Order_Summary_Page.png)
+
 ## Features
 
 In this section, you you will see the different parfeaturests of my project.
