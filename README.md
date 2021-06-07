@@ -66,21 +66,21 @@ This site aims to give users an opportunity to transform their environment throu
 28. As the Admin of the store, I want to be able to send offers to existing and potential customers. 
 
 # Project Wireframe and Design Process
-- [Wireframe design](https://github.com/Leefarmer83/ievas_fragrances/tree/master/static/Wireframes)
-    - [Home](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Home.png)
-    - [Product Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Products_Page.png)
-    - [Product Detail](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Product_detail_Page.png)
-    - [Checkout Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Checkout_Page.png)
-    - [Shopping Basket](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Shooping_Basket_Page.png)
-    - [Complete Order](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Complete_Order_Page.png)
-    - [Order Summary](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Order_Summary_Page.png)
+- [Wireframe design](https://github.com/Leefarmer83/ievas_fragrances/tree/master/assets/readme_images/Wireframes)
+    - [Home](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Home.png)
+    - [Product Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Products_Page.png)
+    - [Product Detail](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Product_detail_Page.png)
+    - [Checkout Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Checkout_Page.png)
+    - [Shopping Basket](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Shoping_Basket_Page.png)
+    - [Complete Order](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Complete_Order_Page.png)
+    - [Order Summary](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Order_Summary_Page.png)
 
 # Design
 
 ## Database Structure
 ![Database Structure ](/assets/readme_images/database_structure.png)
 
-- [Database Structure](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Order_Summary_Page.png)
+- [Database Structure](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/database_structure.png)
 
 ## Features
 
