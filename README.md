@@ -1,32 +1,210 @@
-# Your Project's Name
+# Milestone Project 4 - Ieva's Fragrances
 
-One or two paragraphs providing an overview of your project.
+This app was built using [GitHub](https://pages.github.com/) and deployed to [Heroku](https://www.heroku.com/).
 
-Essentially, this part is your sales pitch.
- 
-## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+[View Site](https://ievas-fragrances.herokuapp.com/)
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+# Table of Contents
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+- [UX](#ux)
+    - [Project Goals](#project-goals)
+    - [User Stories](#user-stories)
+    - [Project Wireframe and Design Process](#Project-Wireframe-and-Design-Process)
+- [Features](#features)
+    - [base.html](#basehtml)
+    - [index.html (Home)](#indexhtml-home)
+    - [register.html](#registerhtml)
+    - [login.html](#loginhtml)
+    - [profile.html](#profilehtml)
+    - [words.html](#wordshtml)
+    - [word_cat.html](#word_catshtml)
+    - [add_words.html](#addwordshtml)
+    - [my_words.html](#mywordshtml)
+    - [pronunciation.html](#pronunciationhtml)
+    - [add_category.html](#add_categoryhtml)
+    - [edit_category.html](#edit_categoryhtml)
+    - [edit_words.html](#edit_wordshtml)
+    - [manage_categories](#mdmanage_categorieshtml)
+    - [Future Features](#future_features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgements)
+
+# UX
+
+My inspiration for this project came from a combination of my enjoyment of online shopping and technology, and my desire to help my fiance launch her own business. I decided to build a website where she could display, and market her range of hand picked wax melts, and wax melt warmers. These wax melts are smaller than candles, but they also make great gifts, so value packs are also on offer. 
+
+The site features a clean design with an intuitive interface for users using both a desktop, tablet or a mobile device to purchase. A website is an effective channel to reach a wide base of customers. The market, and demographic for wax melts is broad, from business owners to individuals. Many users are still more familiar with purchasing via a website over purchasing through an app on their table or phone. Ensuring that the site is mobile responsive gives users coming from a tablet or mobile device the best user experience. It also saves outlay for a sole trader or small business owner as they don’t need to invest in iOS, Windows or Android native apps, but can still capture sales from users of those devices. 
+
+
+# Project Goals
+
+This site aims to give users an opportunity to transform their environment through the medium of scent. Users will be able to select from a range of wax melts, curated into different fragrance families, to bring a unique scent and mood to their home. In addition, wax melt holders in a range of styles are also available. Wax melts and wax melt holders can be purchased individually, or as value pack bundles. 
+
+
+# User Stories
+
+### First time user
+1. As a user I want to know what the website is about.
+2. As a user, I want to be able to navigate through the website and easily access all of its features.
+3. As a user, I want to see images with easy descriptions of each product.
+4. As a user, I want to see details about the product/s.
+5. As a user, I want to be able to see and navigate to the product/s I want to buy.
+6. As a user, I want to be able to sort products by price and category.
+7. As a user, I want a text bar to search for products using keywords.
+8. As a user, I want to see the quantity of each product/s I have selected.
+9. As a user, I want to see reviews on products to give me confidence in the product/s.
+10. As a user, I want to be able to contact the company if I have a question.
+11. As a user, I want to be able to create an account.
+12. As a user, I want to be able to log in and out of an account.
+13. As a user, I want to be able to authenticate with my Google account.
+14. As a user, I want to be able to purchase something without having to create an account.
+15. As a user I want to be able to purchase from all devices.
+16. As a user, I want to see a detailed shopping basket.
+17. As a user, I want to be able to see a summary of my order before I place it.
+18. As a user I want the ability to edit my shopping basket.
+19. As a user, I want to securely add my payment information.
+20. As a user, I want to be able to log out when I am done.
+21. As a user, I want to be kept up to date with the latest offers. 
+### Returning user
+22. As a user, I want to be able to edit my personal details.
+23. As a user, I would like to leave and edit my own review of the product
+24. As a user, I want to be able to see my order history.
+### Admin of the store
+25. As the Admin of the store, I want to be able to edit, add, and delete products in the website’s UI.
+26. As the Admin of the store, I want to be able to easily access, maintain and edit all the data associated with the website.
+27. As the Admin of the store, I want to be able to send order confirmations.
+28. As the Admin of the store, I want to be able to send offers to existing and potential customers. 
+
+# Project Wireframe and Design Process
+- [Wireframe design](https://github.com/Leefarmer83/ievas_fragrances/tree/master/static/Wireframes)
+    - [Home](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Home.png)
+    - [Product Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Products_Page.png)
+    - [Product Detail](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Product_detail_Page.png)
+    - [Checkout Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Checkout_Page.png)
+    - [Shopping Basket](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Shooping_Basket_Page.png)
+    - [Complete Order](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Complete_Order_Page.png)
+    - [Order Summary](https://github.com/Leefarmer83/ievas_fragrances/blob/master/static/Wireframes/Order_Summary_Page.png)
+
+# Design
+
+
+
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+In this section, you you will see the different parfeaturests of my project.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+#### index.html (Home)
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+The home page features a slider that clearly illustrates the purpose of the site to users. There are six categories of fragrance for users to choose from when selecting wax melts. There is also a ‘specials’ section for users to navigate to wax burners, packages and combination packs, In addition, there is a search bar for keyword search, a subscribe option, and an account section. 
+
+##### User story addressed:
+1. As a user I want to know what the website is about.
+2. As a user, I want to be able to navigate through the website and easily access all of its features.
+3. As a user, I want a text bar to search for products using keywords.
+
+#### sign up
+On the register page, the user creates a username and password for successful registration. Once the user has chosen a username and password, they click the Sign Up button to enter the site. If a user chooses an email or a username that already exists in the system, a message loads to let them know the email or username is not available. 
+##### User story addressed:
+11. As a user, I want to be able to create an account.
+
+#### Sign in
+On the login page, users can input their username and password, and select the log in button to login. If a user enters an incorrect username or password, a message loads to let them know they have entered an incorrect credential. When a user logs out, a message loads to let them know they have logged out successfully. Users can also use their Google account credentials to authenticate into the site. 
+
+##### User story addressed:
+12. As a user, I want to be able to log in and out of an account.
+13. As a user, I want to be able to authenticate with my Google account.
+
+#### logout
+When a user chooses to logout, they are taken to the logout page where they are asked to confirm their decision to logout. Once they have logged out, a message pops up to tell them they have successfully logged out of the site. 
+##### User story addressed:
+20. As a user, I want to be able to log out when I am done.
+
+#### profile
+On the My Profile page, users can input their contact telephone number, and their delivery address, as well as edit their details by selecting the Update Information button. Users can also see their order history on this page including the order number, date, items and order total. 
+##### User story addressed:
+22. As a user, I want to be able to edit my personal details.
+25. As a user, I want to be able to see my order history.
+
+#### product
+When a user clicks on the product page, they can select a product. When the user selects a product to view, they can see an image and details of that individual product, including the price and quantity they have selected. These can also be removed or edited. 
+##### User stories addressed:
+3. As a user, I want to see images with easy descriptions of each product.
+4. As a user, I want to see details about the product/s.
+8. As a user, I want to see the quantity of each product/s I have selected.
+
+#### sort
+When a user is on the product page, they can click on the Sort menu. The user can sort by price (low to high, and high to low), rating (low to high, and high to low), name (A-Z and Z-A) or category (A-Z or Z-A). The user can click on sort by price high to low, and the products will display with those with the  highest price at the top of the page descending to those with the lowest price. The user can click on sort by low to high, and the products on the page will display with those with the lowest price at the top of the page descending to those with the highest price. 
+##### User story addressed:
+6. As a user, I want to be able to sort products by price and category.
+
+#### category
+When a user clicks on Category on the home page, the category drop down launches, and the user can select one of the six fragrance categories, or choose to see all the products. When a user selects a specific fragrance family category, they are taken to a page where the products that meet those criteria are displayed. 
+##### User story addressed:
+5. As a user, I want to be able to see and navigate to the product/s I want to buy.
+
+#### bag
+When a user selects a product and clicks the Add to Basket button, the product will be added to their basket. Users can view the product in the basket, and can edit the basket, increasing or decreasing quantity as well as removing items. Users can also opt to ‘Keep Shopping’ and will be returned to the product page. 
+##### User story addressed:
+8. As a user, I want to see the quantity of each product/s I have selected.
+16. As a user, I want to see a detailed shopping basket.
+18. As a user I want the ability to edit my shopping basket.
+
+#### checkout
+Users can enter their details and state what wax melts they would like (if in package), review their delivery address details, and add their payment details on this page. Users can also see a summary of their order before they complete their order. 
+##### User story addressed:
+17. As a user, I want to be able to see a summary of my order before I place it.
+19. As a user, I want to securely add my payment information.
+
+#### reviews
+When a user is on a product page, they can navigate to the reviews for that product by clicking on ‘Customer Reviews’. Here they can see reviews from other customers. If the product listing has no reviews, the user will be invited to write their own review.
+
+##### User story addressed:
+9. As a user, I want to see reviews on products to give me confidence in the product/s.
+24. As a user, I would like to leave and edit my own review of the product
+
+
+#### Contact Us
+Users can find the contact email address on the footer on each page
+##### User story addressed:
+10. As a user, I want to be able to contact the company if I have a question.
+
+#### admin
+The site owner can log into the admin page as a super user to see all orders, edit orders, create, delete and edit products, see who has subscribed, read reviews and look up users details.
+
+##### User story addressed:
+26. As the Admin of the store, I want to be able to edit, add, and delete products in the website’s UI.
+27. As the Admin of the store, I want to be able to easily access, maintain and edit all the data associated with the website.
+
+
+#### Order confirmation
+Once the User succesfully completes an order, he/she will get an automated email.
+
+##### User story addressed:
+28. As the Admin of the store, I want to be able to send order confirmations.
+
+
+#### Subscribe
+By clicking on the subscribe button the user is asked for their email address. Once the site admin have this they will be able to send product offerings
+
+##### User story addressed:
+21. As a user, I want to be kept up to date with the latest offers. 
+29. As the Admin of the store, I want to be able to send offers to existing and potential customers. 
+
 
 ### Features Left to Implement
-- Another feature idea
+- Allow users to edit their reviews.
+- Setup deliver options instead of a discount. 
+- Setup the password reset fiunctuonality, today users need to send an email to have it reset.
+- Order confirmatiuon email to the store owner.
+- Create a functionality for the owner to give discount codes to its users.
+- Paginmation - On bothe the products page and review tab.
 
 ## Technologies Used
 
