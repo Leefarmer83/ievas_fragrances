@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "")
 if "DEVELOPMENT" in os.environ:
     DEBUG = True
 else:
-    DEBUG = True
+    DEBUG = False
 
 ALLOWED_HOSTS = ["ievas-fragrances.herokuapp.com", "localhost"]
 
