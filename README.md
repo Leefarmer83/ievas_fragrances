@@ -147,6 +147,7 @@ When a user selects a product and clicks the Add to Basket button, the product w
 #### checkout
 Users can enter their details and state what wax melts they would like (if in package), review their delivery address details, and add their payment details on this page. Users can also see a summary of their order before they complete their order. 
 ##### User story addressed:
+14. As a user, I want to be able to purchase something without having to create an account.
 17. As a user, I want to be able to see a summary of my order before I place it.
 19. As a user, I want to securely add my payment information.
 
