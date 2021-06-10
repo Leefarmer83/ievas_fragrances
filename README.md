@@ -190,7 +190,6 @@ By clicking on the subscribe button the user is asked for their email address. O
 ### Features Left to Implement
 - Allow users to edit their reviews.
 - Setup deliver options instead of a discount. 
-- Setup the password reset fiunctuonality, today users need to send an email to have it reset.
 - Order confirmatiuon email to the store owner.
 - Create a functionality for the owner to give discount codes to its users.
 - Paginmation - On bothe the products page and review tab.
