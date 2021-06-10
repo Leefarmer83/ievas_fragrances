@@ -14,6 +14,7 @@
 {% endblock %}
 
 {% block content %}
+<!--Checkout messaging-->
 <div class="overlay"></div>
 <div class="container">
     <div class="row Oswald">
@@ -188,6 +189,7 @@
                         <p class="mb-0">{{ order.grand_total }}</p>
                     </div>
                 </div>
+                <!--If customer needs to leave message around the order-->
                 {% if order.special_instructions %}
                 <div class="row">
                     <div class="col-12 col-md-4">

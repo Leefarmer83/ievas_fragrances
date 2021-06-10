@@ -33,7 +33,9 @@ class OrderForm(forms.ModelForm):
             "street_address1": "Street Address 1",
             "street_address2": "Street Address 2",
             "county": "County",
-            "special_instructions": "Please let us know what Wax Melts you would like if your order has a package or Wax Melt and Burner combo",
+            "special_instructions": "Please let us know" +
+            "what Wax Melts you would like if your order" +
+            "has a package or Wax Melt and Burner combo",
         }
 
         self.fields["full_name"].widget.attrs["autofocus"] = True
