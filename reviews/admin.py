@@ -3,6 +3,10 @@ from .models import Review
 
 
 class ReviewAdmin(admin.ModelAdmin):
+    """
+    Checkout admin fields
+    """
+
     list_display = (
         "product",
         "review_title",

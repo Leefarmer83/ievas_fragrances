@@ -3,6 +3,10 @@ from .models import Review
 
 
 class ReviewForm(forms.ModelForm):
+    """
+    Review form
+    """
+
     class Meta:
         model = Review
         exclude = (

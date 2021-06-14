@@ -9,6 +9,10 @@ from django.template.loader import render_to_string
 
 @login_required
 def add_review_form(request, product_id):
+    """
+    Review form
+    """
+
     data = dict()
     if request.method == "POST":
         form = ReviewForm(request.POST)
@@ -51,6 +55,10 @@ def add_review_form(request, product_id):
 
 
 def add_review(request, product_id):
+    """
+    Add Review
+    """
+
     data = dict()
     form = ReviewForm()
     context = {"form": form, "product_id": product_id}

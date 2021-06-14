@@ -164,7 +164,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 	
-/*----------Product tab------------------*/
+/* Product tab */
 
 .product-tab {
   margin-top: 30px;
@@ -251,7 +251,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {

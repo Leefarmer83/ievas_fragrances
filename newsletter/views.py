@@ -4,6 +4,9 @@ from django.template.loader import render_to_string
 
 
 def add_subscriber(request):
+    """
+    Add a subscriber
+    """
     data = dict()
     form = SubscriberForm()
     context = {"form": form}
@@ -16,6 +19,10 @@ def add_subscriber(request):
 
 
 def add_subscriber_form(request):
+    """
+    Subscriber form, use with modal
+    """
+
     data = dict()
     if request.method == "POST":
         form = SubscriberForm(request.POST)

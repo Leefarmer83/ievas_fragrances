@@ -3,6 +3,9 @@ from profiles.models import UserProfile
 
 
 class Review(models.Model):
+    """
+    fields for review model
+    """
 
     product = models.ForeignKey(
         "products.Product",
