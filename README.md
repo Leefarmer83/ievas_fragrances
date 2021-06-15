@@ -15,7 +15,7 @@ This app was built using [GitHub](https://pages.github.com/) and deployed to [He
         - [Surface Plane](#surface-plane)
     - [User Stories](#user-stories)
     - [Project Wireframe and Design Process](#Project-Wireframe-and-Design-Process)
-- [Features](#features)
+- [Existing Features](#existing-features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -104,12 +104,8 @@ Sourced images were mixed with original images of actual wax melt products and w
 ![Database Structure ](/assets/readme_images/database_structure.png)
 
 - [Database Structure](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/database_structure.png)
-
-## Features
-
-In this section, you you will see the different parfeaturests of my project.
  
-### Existing Features
+## Existing Features
 
 #### index.html (Home)
 
@@ -120,7 +116,7 @@ The home page features a slider that clearly illustrates the purpose of the site
 - As a user, I want to be able to navigate through the website and easily access all of its features.
 - As a user, I want a text bar to search for products using keywords.
 
-#### sign up
+#### Sign up
 On the register page, the user creates a username and password for successful registration. Once the user has chosen a username and password, they click the Sign Up button to enter the site. If a user chooses an email or a username that already exists in the system, a message loads to let them know the email or username is not available. 
 ##### User story addressed:
 - As a user, I want to be able to create an account.
@@ -131,49 +127,56 @@ On the login page, users can input their username and password, and select the l
 ##### User story addressed:
 - As a user, I want to be able to log in and out of an account.
 
-#### logout
+### Reset
+When a user selects ‘forgot password’ on the login page, the password reset page loads. Users enter their email and select the ‘Reset my password’ button. An email is sent to the user with a password reset link. When the user clicks the link, the Change Password page loads, and users can enter and confirm their new password selection. 
+
+##### User story addressed:
+- As a user, I want to be able to reset my password.
+
+
+#### Logout
 When a user chooses to logout, they are taken to the logout page where they are asked to confirm their decision to logout. Once they have logged out, a message pops up to tell them they have successfully logged out of the site. 
 ##### User story addressed:
 - As a user, I want to be able to log out when I am done.
 
-#### profile
+#### Profile
 On the My Profile page, users can input their contact telephone number, and their delivery address, as well as edit their details by selecting the Update Information button. Users can also see their order history on this page including the order number, date, items and order total. 
 ##### User story addressed:
 - As a user, I want to be able to edit my personal details.
 - As a user, I want to be able to see my order history.
 
-#### product
+#### Product
 When a user clicks on the product page, they can select a product. When the user selects a product to view, they can see an image and details of that individual product, including the price and quantity they have selected. These can also be removed or edited. 
 ##### User stories addressed:
 - As a user, I want to see images with easy descriptions of each product.
 - As a user, I want to see details about the product/s.
 - As a user, I want to see the quantity of each product/s I have selected.
 
-#### sort
+#### Sort
 When a user is on the product page, they can click on the Sort menu. The user can sort by price (low to high, and high to low), rating (low to high, and high to low), name (A-Z and Z-A) or category (A-Z or Z-A). The user can click on sort by price high to low, and the products will display with those with the  highest price at the top of the page descending to those with the lowest price. The user can click on sort by low to high, and the products on the page will display with those with the lowest price at the top of the page descending to those with the highest price. 
 ##### User story addressed:
 - As a user, I want to be able to sort products by price and category.
 
-#### category
+#### Category
 When a user clicks on Category on the home page, the category drop down launches, and the user can select one of the six fragrance categories, or choose to see all the products. When a user selects a specific fragrance family category, they are taken to a page where the products that meet those criteria are displayed. 
 ##### User story addressed:
 - As a user, I want to be able to see and navigate to the product/s I want to buy.
 
-#### bag
+#### Bag
 When a user selects a product and clicks the Add to Basket button, the product will be added to their basket. Users can view the product in the basket, and can edit the basket, increasing or decreasing quantity as well as removing items. Users can also opt to ‘Keep Shopping’ and will be returned to the product page. 
 ##### User story addressed:
 - As a user, I want to see the quantity of each product/s I have selected.
 - As a user, I want to see a detailed shopping basket.
 - As a user I want the ability to edit my shopping basket.
 
-#### checkout
+#### Checkout
 Users can enter their details and state what wax melts they would like (if in package), review their delivery address details, and add their payment details on this page. Users can also see a summary of their order before they complete their order. 
 ##### User story addressed:
 - As a user, I want to be able to purchase something without having to create an account.
 - As a user, I want to be able to see a summary of my order before I place it.
 - As a user, I want to securely add my payment information.
 
-#### reviews
+#### Reviews
 When a user is on a product page, they can navigate to the reviews for that product by clicking on ‘Customer Reviews’. Here they can see reviews from other customers. If the product listing has no reviews, the user will be invited to write their own review.
 
 ##### User story addressed:
@@ -186,7 +189,7 @@ When a user navigates to the footer, they can view the contact details for the s
 ##### User story addressed:
 - As a user, I want to be able to contact the company if I have a question.
 
-#### admin
+#### Admin
 The site features a seperate admin area. The UX here is focused on managing store listings, inventory and orders. The store admin can add products, as well as edit categories, descriptions, pricing and images among other features.
 
 ##### User story addressed:
@@ -194,8 +197,6 @@ The site features a seperate admin area. The UX here is focused on managing stor
 - As the Admin of the store, I want to be able to easily access, maintain and edit all the data associated with the website.
 - As the Admin of the store, I want to be able to send order confirmations.
 - As the Admin of the store, I want to be able to send offers to existing and potential customers. 
-
-
 
 #### Order confirmation
 Once the User succesfully completes an order, he/she will get an automated email.
@@ -205,7 +206,7 @@ Once the User succesfully completes an order, he/she will get an automated email
 
 
 #### Subscribe
-By clicking on the subscribe button the user is asked for their email address. Once the site admin have this they will be able to send product offerings
+When a user clicks on a subscribe menu option, a model launches. User enter their email address into the available field, and are registered to recieve information on the sites latest deals and offers.
 
 ##### User story addressed:
 - As a user, I want to be kept up to date with the latest offers. 
@@ -265,8 +266,6 @@ In addition, you should mention in this section how your project looks and works
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## Deployment
 
 ## Deployment
 
@@ -352,3 +351,5 @@ You will also need to set yourself up with a stripe account to handle payments a
 ### Acknowledgements
 
 - I received inspiration for this project from X
+
+
