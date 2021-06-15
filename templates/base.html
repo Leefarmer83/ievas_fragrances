@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-     <!--Link to Favicon image-->
+    <!--Link to Favicon image-->
     <link rel="icon" href="{% static 'images/favicon_ieva.png' %}">
 
     {% endblock %}
@@ -34,11 +34,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -135,7 +135,7 @@
 
     {% if messages %}
     <div class="message-container">
-    <!-- toasts -->
+        <!-- toasts -->
         {% for message in messages %}
         {% with message.level as level %}
         {% if level == 40 %}
@@ -201,8 +201,9 @@
                         </i>Ieva's Fragrrances
                     </h6>
                     <p>
-                        Family run business who take joy and pride in deliverying fragrances to our customers
-                        households.
+                        Ieva’s Fragrances
+                        Family run business that delights in delivering high quality, hand crafted fragrances to our
+                        customers.
                     </p>
                 </div>
                 <!-- Grid column -->
