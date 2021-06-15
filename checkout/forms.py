@@ -34,7 +34,7 @@ class OrderForm(forms.ModelForm):
             "street_address2": "Street Address 2",
             "county": "County",
             "special_instructions": "Please let us know " +
-            "what wax melts you would like if your order " +
+            "what wax melts you would like, if your order " +
             "has a package, or wax melt and burner combo.",
         }
 
