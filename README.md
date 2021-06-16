@@ -14,8 +14,10 @@ This app was built using [GitHub](https://pages.github.com/) and deployed to [He
         - [Skeleton plane](#skeleton-plane)
         - [Surface Plane](#surface-plane)
     - [User Stories](#user-stories)
-    - [Project Wireframe and Design Process](#Project-Wireframe-and-Design-Process)
+    - [Wireframe](#wireframe)
+    - [Database Structure](#database-structure)
 - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -88,7 +90,7 @@ Sourced images were mixed with original images of actual wax melt products and w
 - As the Admin of the store, I want to be able to send order confirmations.
 - As the Admin of the store, I want to be able to send offers to existing and potential customers. 
 
-# Project Wireframe and Design Process
+# Wireframe
 - [Wireframe design](https://github.com/Leefarmer83/ievas_fragrances/tree/master/assets/readme_images/Wireframes)
     - [Home](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Home.png)
     - [Product Page](https://github.com/Leefarmer83/ievas_fragrances/blob/master/assets/readme_images/Wireframes/Products_Page.png)
@@ -213,24 +215,28 @@ When a user clicks on a subscribe menu option, a model launches. User enter thei
 - As the Admin of the store, I want to be able to send offers to existing and potential customers. 
 
 
-### Features Left to Implement
+# Features Left to Implement
 - Allow users to edit their reviews.
-- Setup deliver options instead of a discount. 
+- Setup deliver options instead of discount. 
 - Order confirmatiuon email to the store owner.
-- Create a functionality for the owner to give discount codes to its users.
+- Create a functionality for the owner to give discount codes to users.
 - Paginmation - On bothe the products page and review tab.
 - Social media login.
 - In stock messaging.
 
-## Technologies Used
+# Technologies Used
 
 * [Gitpod](https://www.gitpod.io/) is the IDE used for developing this project.
-* [Django](https://www.djangoproject.com/) as python web framework for rapid development and clean design.
+* [Django](https://www.djangoproject.com/) as python web framework for rapid 
+development and clean design.
+* [Bootstrap 4](https://getbootstrap.com/) Grid system and classes create the underlining structure.
 * [Stripe](https://stripe.com/gb) as payment platform to validate and accept credit card payments securely.
 * [AWS S3 Bucket](https://aws.amazon.com/)  to store static files and images entered into the database.
 * [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3
+* [Font Awesome](https://fontawesome.com/) Used for icons
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style django forms.
 * [Heroku](https://www.gitpod.io/) Heroku for deployment
+* [JQuery](https://jquery.com/) Used across different pages on the project to create interactive elements.
 * [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
 * [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
@@ -238,47 +244,93 @@ When a user clicks on a subscribe menu option, a model launches. User enter thei
 * [Github](https://github.com/) to store and share all project code remotely.
 * [Canva](https://www.canva.com/) to resize images. 
 * [Balsamiq/](https://balsamiq.com/)to create the wireframes for this project.
+* [Google Fonts](https://fonts.google.com/) Imported selected fonts. 
+
+
+
+### Languages
+
+-	[HTML5](https://www.w3schools.com/html/default.asp)
+-	[CSS3](https://www.w3schools.com/css/default.asp)
+-	[JavaScript](https://www.w3schools.com/js/default.asp)
+-	[Python](https://www.python.org/)
+
 
 ### Databases
-[PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
-[SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
+[PostgreSQL](https://www.postgresql.org/) Production database, via heroku.
+
+[SQlite3](https://www.sqlite.org/index.html) Development database, via django.
 
 
 
-## Testing
+# Testing
 
 All testing can be found here [View TESTING.md](TESTING.md)
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+# Deployment
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+## Run Locally
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## Deployment
-
-### Create A Project
-
-Gitpod
+You will need the below installed:
 - Python3 to run application
 - PIP to install all app requirements
-    - Django  
-- Heroku account
+    - Django
+- Git for version control
+
+Navigate to the GitHub [Repository](https://github.com/leefarmer83/ievas_fragrances). The easiest way to copy the repository is to download, navigate to the code tab, this will allow you to download the zip file. Next upload into your new workspace.
+
+## or
 
 
-Use template provided by [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template). Create new repository from template page then proceed with `git add .` to add all files to the staging area. Then commit with the command `git commit -m "Initial commit"` then `git push` - This command is used to push all committed changes to the GitHub repository.
+Clone the repository:
+
+Information on how to do this can be found  [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+Install the required dependencies needed to run the app by typing in the command line:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Next create an env.py file, and add the env.py file to your .gitignore file in your projects rot directory. variables to included:
+
+```bash
+os.environ["STRIPE_PUBLIC_KEY"] 
+os.environ["STRIPE_SECRET_KEY"]  
+os.environ["STRIPE_WH_SECRET"]
+os.environ["SECRET_KEY"] 
+os.environ["DEVELOPMENT"] 
+```
+
+You will need to sign up to stripe, details below.
+
+Install the required dependencies needed to run the app by typing in the command line:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Note - Whenever a model is edited you a migration is needed. Fist test with the below command, then take out --dry-run and --plan to migrate
+
+#### Test migrations
+
+```bash
+python3 manage.py makemigrations --dry-run
+
+python3 manage.py migrate --plan
+```
+####  Migrate
+
+
+```bash
+python3 manage.py makemigrations 
+
+python3 manage.py migrate 
+```
+
+
+---
+
 
 ### Deployment to Heroku
 
@@ -322,16 +374,6 @@ Values are not shown.
 1. If you would like there is an option to enable automatic deploys when you push to github.
 1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
 
-### Run Locally
-
-1. Navigate to the GitHub [Repository](https://github.com/leefarmer83/ievas_fragrances).
-1. Select the Code drop down menu.
-1. You now have options to either download tahe ZIP file and open with your choice of IDE or you can copy Git URL from the HTTPS dialogue box which is [here](https://github.com/leefarmer83/ievas_fragrances).
-1. Open your IDE of choice and open you CLI in a directory of your choice.
-1. Use the `git clone` command in said CLI followed by the copied git URL which will enable you to clone the project.
-1. Once the project is in your IDE, run the following command in the CLI to install all the required packages - `pip install -r requirements.txt`.
-1. As stated in deploying to Heroku the project requires a number of environment variables to work, these can be set globally in your environment or as this project uses environ you can create a **.env** file in the same location as the **.env.example**, this is located in core.settings.
-
 ### Stripe and AWS Setup
 
 You will also need to set yourself up with a stripe account to handle payments and an AWS to host the static files.
@@ -342,14 +384,20 @@ You will also need to set yourself up with a stripe account to handle payments a
 
 ## Credits
 
+A huge amount of credit needs to go to the Code Institute, I used their best practices when structuring my code. I have copied a lot of thier code (Bag/checkout/products/profiles/templates) and ajusted to suit the needs of my project, Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
+
+I also used https://testdriven.io/blog/django-custom-user-model/ to help me with the models in newsletter and reviews.
+
+[Bootstrap](https://getbootstrap.com/) framework was used heavily to structure my websit; navbar, footer, classes, toasts.
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The concept, design and text for this project was created by Lee Farmer and inspired by the mini project boutique ado.
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from Ievas Fragrances and i had permission to use.
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from Boutoque ado, I would also like to that the instructors and the slack community for heling me. Special praise to my mentor Gerard McBride.
 
 
