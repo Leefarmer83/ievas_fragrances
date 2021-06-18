@@ -129,7 +129,7 @@ On the login page, users can input their username and password, and select the l
 ##### User story addressed:
 - As a user, I want to be able to log in and out of an account.
 
-### Reset
+###ß## Reset
 When a user selects ‘forgot password’ on the login page, the password reset page loads. Users enter their email and select the ‘Reset my password’ button. An email is sent to the user with a password reset link. When the user clicks the link, the Change Password page loads, and users can enter and confirm their new password selection. 
 
 ##### User story addressed:
