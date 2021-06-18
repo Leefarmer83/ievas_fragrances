@@ -340,3 +340,68 @@ Clicked on Update Product | Message loads to confirm successful update of produc
 - Pass - When a store admin logs in, they can navigate to the Product Management option under My Account. Store admins can select a category, enter a SKU, the name, description and price of a product, as well as images to add a new product. Existing products listings display edit and delete buttons in this mode, and store admins can edit and update existing listings.
 
 
+## As the Admin of the store, I want to be able to easily access, maintain, and edit all the data associated with the website. 
+
+Action Taken | expected result | pass/fail
+------------ | --------------- | ---------
+Login to Admin module | Site administration page loads | pass
+Viewed site administration page | Site apps all present  | pass
+Viewed site administration page | Recent action displayed | pass
+Clicked on site apps | Added data under each site app | pass
+Clicked on site apps | Changed data under each site app. Confirmation of successful change message loads. | pass
+
+- Acceptance Criteria - The site will feature an admin section where store admins can add, change and edit data for each of the apps on the site. 
+
+- Pass - Admin can access, capture and amend as requested.
+
+## As the Admin of the store, I want to be able to send order confirmations. 
+
+Action Taken | expected result | pass/fail
+------------ | --------------- | ---------
+Clicked on Orders | Add order page loads | pass
+Searched for order send | No option to send order | fail
+Order confirmation emails are set up to send automatically once an order is placed. This delivers a better user experience to the customer, instead of the delay that might be experienced waiting for the site administration to manually send order confirmation. 
+
+
+- Acceptance Criteria - The site will feature a facility for store admins to manually send order confirmations to users.
+
+- Pass - Even though the request weas for a user, having this done automatically over acceeds the customers ask.
+
+## As the Admin of the store, I want to be able to send offers to existing and potential customers. 
+
+Action Taken | expected result | pass/fail
+------------ | --------------- | ---------
+Clicked on Subscribers | Select subscriber to change page loads | pass
+Searched for send offer | No send offer option returned | fail
+This module allows the site admin to capture subscriber email addresses, which can then be used as the distribution list for the newsletter.
+
+- Acceptance Criteria - The site will feature a facility for store admins to send newsletters with offers directly from the admin panel. 
+
+- Pass - The site captures the detail to enable the store owner to contact those that have subscribed for the newsletter.
+
+
+## Manual Testing
+
+- Every page has been tested, checking that:
+- Images load.
+- Size of images are the same.
+- All nav buttons work as intended.
+- All external links work. 
+- All forms are operational and pass the required data.
+- All Toasts work.
+
+
+## Bugs and issues
+
+- I had trouble with. my local environmnet in setting (gitpod), this lead to me crearting an env.py file. It was a welcome issue as this forced me to follow best practacies
+- Email confirmation on register
+    - I was not recieving a confirmation email, turn out it was the third party provided, student care pointed me in the right direction "https://10minutemail.com/"
+- I was getting a 500 error once I deplloyed my code to Heroku, turns out my session needed deleting as it had a deleted product in the basket.
+- Zip Code required
+    - When using the code from the project, it required a zip code, as this is for a UK busdiness, i adapted the code accordingly.
+- 
+
+
+
+
+
