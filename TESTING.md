@@ -365,7 +365,7 @@ Order confirmation emails are set up to send automatically once an order is plac
 
 - Acceptance Criteria - The site will feature a facility for store admins to manually send order confirmations to users.
 
-- Pass - Even though the request weas for a user, having this done automatically over acceeds the customers ask.
+- Pass - Even though the request weas for a user, having this done automatically over accedes the customers ask.
 
 ## As the Admin of the store, I want to be able to send offers to existing and potential customers. 
 
@@ -393,13 +393,12 @@ This module allows the site admin to capture subscriber email addresses, which c
 
 ## Bugs and issues
 
-- I had trouble with. my local environmnet in setting (gitpod), this lead to me crearting an env.py file. It was a welcome issue as this forced me to follow best practacies
+-	I had trouble with. my local environment in setting (gitpod), this lead to me creating an env.py file. It was a welcome issue as this forced me to follow best practices.
 - Email confirmation on register
-    - I was not recieving a confirmation email, turn out it was the third party provided, student care pointed me in the right direction "https://10minutemail.com/"
-- I was getting a 500 error once I deplloyed my code to Heroku, turns out my session needed deleting as it had a deleted product in the basket.
+    - I was not receiving a confirmation email, turn out it was the third party provided, student care pointed me in the right direction "https://10minutemail.com/"
+- I was getting a 500 error once I deployed my code to Heroku, turns out my session needed deleting as it had a deleted product in the basket.
 - Zip Code required
-    - When using the code from the project, it required a zip code, as this is for a UK busdiness, i adapted the code accordingly.
-- 
+    - When using the code from the project, it required a zip code, as this is for a UK business, I adapted the code accordingly.
 
 
 

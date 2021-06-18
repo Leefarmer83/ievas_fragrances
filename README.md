@@ -201,14 +201,14 @@ The site features a seperate admin area. The UX here is focused on managing stor
 - As the Admin of the store, I want to be able to send offers to existing and potential customers. 
 
 #### Order confirmation
-Once the User succesfully completes an order, he/she will get an automated email.
+Once the User successfully completes an order, he/she will get an automated email.
 
 ##### User story addressed:
 - As the Admin of the store, I want to be able to send order confirmations.
 
 
 #### Subscribe
-When a user clicks on a subscribe menu option, a model launches. User enter their email address into the available field, and are registered to recieve information on the sites latest deals and offers.
+When a user clicks on a subscribe menu option, a model launches. User enter their email address into the available field, and are registered to receive  information on the sites latest deals and offers.
 
 ##### User story addressed:
 - As a user, I want to be kept up to date with the latest offers. 
@@ -218,9 +218,9 @@ When a user clicks on a subscribe menu option, a model launches. User enter thei
 # Features Left to Implement
 - Allow users to edit their reviews.
 - Setup deliver options instead of discount. 
-- Order confirmatiuon email to the store owner.
+- Order confirmation  email to the store owner.
 - Create a functionality for the owner to give discount codes to users.
-- Paginmation - On bothe the products page and review tab.
+- Pagination - On both the products page and review tab.
 - Social media login.
 - In stock messaging.
 
@@ -384,11 +384,11 @@ You will also need to set yourself up with a stripe account to handle payments a
 
 ## Credits
 
-A huge amount of credit needs to go to the Code Institute, I used their best practices when structuring my code. I have copied a lot of thier code (Bag/checkout/products/profiles/templates) and ajusted to suit the needs of my project, Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
+A huge amount of credit needs to go to the Code Institute, I used their best practices when structuring my code. I have copied a lot of their  code (Bag/checkout/products/profiles/templates) and adjusted  to suit the needs of my project, Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
 
 I also used https://testdriven.io/blog/django-custom-user-model/ to help me with the models in newsletter and reviews.
 
-[Bootstrap](https://getbootstrap.com/) framework was used heavily to structure my websit; navbar, footer, classes, toasts.
+[Bootstrap](https://getbootstrap.com/) framework was used heavily to structure the website; navbar, footer, classes, toasts.
 
 ### Content
 - The concept, design and text for this project was created by Lee Farmer and inspired by the mini project boutique ado.
@@ -398,6 +398,6 @@ I also used https://testdriven.io/blog/django-custom-user-model/ to help me with
 
 ### Acknowledgements
 
-- I received inspiration for this project from Boutoque ado, I would also like to that the instructors and the slack community for heling me. Special praise to my mentor Gerard McBride.
+- I received inspiration for this project from Boutique ado, I would also like to that the instructors and the slack community for heling me. Special praise to my mentor Gerard McBride.
 
 
