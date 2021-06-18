@@ -192,7 +192,7 @@ When a user navigates to the footer, they can view the contact details for the s
 - As a user, I want to be able to contact the company if I have a question.
 
 #### Admin
-The site features a seperate admin area. The UX here is focused on managing store listings, inventory and orders. The store admin can add products, as well as edit categories, descriptions, pricing and images among other features.
+The site features a separate admin area. The UX here is focused on managing store listings, inventory and orders. The store admin can add products, as well as edit categories, descriptions, pricing and images among other features.
 
 ##### User story addressed:
 - As the Admin of the store, I want to be able to edit, add, and delete products in the website’s UI.
@@ -208,7 +208,7 @@ Once the User successfully completes an order, he/she will get an automated emai
 
 
 #### Subscribe
-When a user clicks on a subscribe menu option, a model launches. User enter their email address into the available field, and are registered to receive  information on the sites latest deals and offers.
+When a user clicks on a subscribe menu option, a model launches. Users enter their email address into the available field, and are registered to receive  information on the sites latest deals and offers.
 
 ##### User story addressed:
 - As a user, I want to be kept up to date with the latest offers. 
@@ -217,7 +217,7 @@ When a user clicks on a subscribe menu option, a model launches. User enter thei
 
 # Features Left to Implement
 - Allow users to edit their reviews.
-- Setup deliver options instead of discount. 
+- Setup delivery options instead of discounts. 
 - Order confirmation  email to the store owner.
 - Create a functionality for the owner to give discount codes to users.
 - Pagination - On both the products page and review tab.
@@ -343,7 +343,7 @@ python3 manage.py migrate
 1. Once the app is created, navigate to the deploy tab.
 1. Select GitHub - Connect to GitHub to connect heroku to your github where the repository to deploy is stored.
 1. Find the github repository to connect to.
-1. Enter the repository name for the project you wish to deplot and click search.
+1. Enter the repository name for the project you wish to deploy and click search.
 1. Once the repo has been found, click the connect button.
 
 

@@ -393,7 +393,7 @@ This module allows the site admin to capture subscriber email addresses, which c
 
 ## Bugs and issues
 
--	I had trouble with. my local environment in setting (gitpod), this lead to me creating an env.py file. It was a welcome issue as this forced me to follow best practices.
+-	I had trouble with my local environment in settings (gitpod), this led to me creating an env.py file. It was a welcome issue as this forced me to follow best practices.
 - Email confirmation on register
     - I was not receiving a confirmation email, turn out it was the third party provided, student care pointed me in the right direction "https://10minutemail.com/"
 - I was getting a 500 error once I deployed my code to Heroku, turns out my session needed deleting as it had a deleted product in the basket.
