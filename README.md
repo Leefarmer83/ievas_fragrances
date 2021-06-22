@@ -178,8 +178,10 @@ Users can enter their details and state what wax melts they would like (if in pa
 - As a user, I want to be able to see a summary of my order before I place it.
 - As a user, I want to securely add my payment information.
 
-#### Reviews
+#### Reviews and Rating 
 When a user is on a product page, they can navigate to the reviews for that product by clicking on ‘Customer Reviews’. Here they can see reviews from other customers. If the product listing has no reviews, the user will be invited to write their own review.
+
+The usr will also be asked to give a rating out of 5. if the product/s have more than one rating the average is shown.
 
 ##### User story addressed:
 - As a user, I want to see reviews on products to give me confidence in the product/s.
