@@ -11,8 +11,8 @@ This app was built using [GitHub](https://pages.github.com/) and deployed to [He
     - [Development Planes](#development-planes)
         - [The Strategy Plane](#the-strategy-plane)
         - [The Scope Plane](#the-scope-plane)
-        - [Skeleton plane](#skeleton-plane)
-        - [Surface Plane](#surface-plane)
+        - [The Skeleton Plane](#skeleton-plane)
+        - [The Surface Plane](#surface-plane)
     - [User Stories](#user-stories)
     - [Wireframe](#wireframe)
     - [Database Structure](#database-structure)
@@ -38,18 +38,18 @@ The site features a clean design with an intuitive interface for users using bot
 
 ## The Scope Plane
 The scope of the site is to attract users by offering a quick and simple way to identify products by keyword search, categories of scents, and specials available. In addition to offering a simple, secure and reliable payment process, users can also be notified of new offers through a newsletter. There is no requirement for an account in order to make a purchase. 
-Store owner will also have an admin feature for manageing orders, product inventory and subscriptions.
+Store owners will also have an admin feature for managing orders, product inventory and subscriptions
 
 The site is structured to guide the user through product selection to payment as seamlessly as possible. 
 
-## Skeleton plane
+## The Skeleton Plane
 The design of the home page directs the user to the product catalogue, specials, and to subscribe.
 
 The menu guides the user intuitively from the home page to the wax melt filter options, categories, specials and subscription feature. 
 
 The information architecture is designed to support the user goals for the site;simplifying the choice of a product, and minimising the number of decisions a user needs to make before successfully checking out. Static files including images are stored in an AWS S3 bucket.
 
-## Surface Plane
+## The Surface Plane
 The images, fonts, colour palette and appearance were all chosen for an elegant modern feminine feel.
 All forms were kept clean and simple with a focus on collecting only the most pertinent information. 
 The font was chosen to convey elegance while simultaneously being easy to read. The logo features an incorporated flame that plays on the wax burner and melt product theme. 
@@ -129,7 +129,7 @@ On the login page, users can input their username and password, and select the l
 ##### User story addressed:
 - As a user, I want to be able to log in and out of an account.
 
-###ß## Reset
+#### Reset
 When a user selects ‘forgot password’ on the login page, the password reset page loads. Users enter their email and select the ‘Reset my password’ button. An email is sent to the user with a password reset link. When the user clicks the link, the Change Password page loads, and users can enter and confirm their new password selection. 
 
 ##### User story addressed:
@@ -208,7 +208,7 @@ Once the User successfully completes an order, he/she will get an automated emai
 
 
 #### Subscribe
-When a user clicks on a subscribe menu option, a model launches. Users enter their email address into the available field, and are registered to receive  information on the sites latest deals and offers.
+When a user clicks on a subscribe menu option, a model launches. Users enter their email address into the available field, and are registered to receive information on the site's latest deals and offers.
 
 ##### User story addressed:
 - As a user, I want to be kept up to date with the latest offers. 
@@ -227,23 +227,23 @@ When a user clicks on a subscribe menu option, a model launches. Users enter the
 # Technologies Used
 
 * [Gitpod](https://www.gitpod.io/) is the IDE used for developing this project.
-* [Django](https://www.djangoproject.com/) as python web framework for rapid 
+* [Django](https://www.djangoproject.com/) is a Python web framework for rapid 
 development and clean design.
-* [Bootstrap 4](https://getbootstrap.com/) Grid system and classes create the underlining structure.
-* [Stripe](https://stripe.com/gb) as payment platform to validate and accept credit card payments securely.
+* [Bootstrap 4](https://getbootstrap.com/) Grid system and classes create the underlying structure.
+* [Stripe](https://stripe.com/gb) is a payment platform to validate and accept credit card payments securely.
 * [AWS S3 Bucket](https://aws.amazon.com/)  to store static files and images entered into the database.
-* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
 * [Font Awesome](https://fontawesome.com/) Used for icons
-* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style django forms.
-* [Heroku](https://www.gitpod.io/) Heroku for deployment
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style Django forms.
+* [Heroku](https://www.gitpod.io/) Heroku for deployment.
 * [JQuery](https://jquery.com/) Used across different pages on the project to create interactive elements.
-* [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
-* [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+* [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX to aid in deployment of the Django project to Heroku.
+* [Pillow](https://pillow.readthedocs.io/en/stable/) as Python imaging library to aid in processing image files to store in database.
 * [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 * [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
 * [Github](https://github.com/) to store and share all project code remotely.
 * [Canva](https://www.canva.com/) to resize images. 
-* [Balsamiq/](https://balsamiq.com/)to create the wireframes for this project.
+* [Balsamiq](https://balsamiq.com/)to create the wireframes for this project.
 * [Google Fonts](https://fonts.google.com/) Imported selected fonts. 
 
 
@@ -257,9 +257,9 @@ development and clean design.
 
 
 ### Databases
-[PostgreSQL](https://www.postgresql.org/) Production database, via heroku.
+[PostgreSQL](https://www.postgresql.org/) Production database, via Heroku.
 
-[SQlite3](https://www.sqlite.org/index.html) Development database, via django.
+[SQlite3](https://www.sqlite.org/index.html) Development database, via Django.
 
 
 
@@ -292,7 +292,7 @@ Install the required dependencies needed to run the app by typing in the command
 pip3 install -r requirements.txt
 ```
 
-Next create an env.py file, and add the env.py file to your .gitignore file in your projects rot directory. variables to included:
+Next create an env.py file, and add the env.py file to your .gitignore file in your project's root directory. variables to included:
 
 ```bash
 os.environ["STRIPE_PUBLIC_KEY"] 
@@ -302,7 +302,7 @@ os.environ["SECRET_KEY"]
 os.environ["DEVELOPMENT"] 
 ```
 
-You will need to sign up to stripe, details below.
+You will need to sign up to Stripe, details below.
 
 Install the required dependencies needed to run the app by typing in the command line:
 
@@ -310,7 +310,7 @@ Install the required dependencies needed to run the app by typing in the command
 pip3 install -r requirements.txt
 ```
 
-Note - Whenever a model is edited you a migration is needed. Fist test with the below command, then take out --dry-run and --plan to migrate
+Note - Whenever a model is edited you a migration is needed. First test with the below command, then take out --dry-run and --plan to migrate.
 
 #### Test migrations
 
@@ -341,8 +341,8 @@ python3 manage.py migrate
 **Set up connection to Github Repository:**
 
 1. Once the app is created, navigate to the deploy tab.
-1. Select GitHub - Connect to GitHub to connect heroku to your github where the repository to deploy is stored.
-1. Find the github repository to connect to.
+1. Select GitHub - Connect to GitHub to connect Heroku to your GitHub where the repository to deploy is stored.
+1. Find the GitHub repository to connect to.
 1. Enter the repository name for the project you wish to deploy and click search.
 1. Once the repo has been found, click the connect button.
 
@@ -371,12 +371,12 @@ python3 manage.py migrate
 Values are not shown.
 
 **Enable automatic deployment:**
-1. If you would like there is an option to enable automatic deploys when you push to github.
+1. If you would like there is an option to enable automatic deploys when you push to GitHub.
 1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
 
 ### Stripe and AWS Setup
 
-You will also need to set yourself up with a stripe account to handle payments and an AWS to host the static files.
+You will also need to set yourself up with a Stripe account to handle payments and an AWS to host the static files.
 
 [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-up-s3.html)
 
@@ -384,20 +384,20 @@ You will also need to set yourself up with a stripe account to handle payments a
 
 ## Credits
 
-A huge amount of credit needs to go to the Code Institute, I used their best practices when structuring my code. I have copied a lot of their  code (Bag/checkout/products/profiles/templates) and adjusted  to suit the needs of my project, Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
+A huge amount of credit needs to go to the Code Institute, I followed their best practices when structuring my code, gaining insperation from the mini project (Boutique Ado) adjusting the code when needed. Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
 
 I also used https://testdriven.io/blog/django-custom-user-model/ to help me with the models in newsletter and reviews.
 
 [Bootstrap](https://getbootstrap.com/) framework was used heavily to structure the website; navbar, footer, classes, toasts.
 
 ### Content
-- The concept, design and text for this project was created by Lee Farmer and inspired by the mini project boutique ado.
+- The concept, design and text for this project was created by Lee Farmer and inspired by the mini project Boutique Ado.
 
 ### Media
-- The photos used in this site were obtained from Ievas Fragrances and i had permission to use.
+- The photos used in this site were obtained from Ievas Fragrances and i had permission to use them.
 
 ### Acknowledgements
 
-- I received inspiration for this project from Boutique ado, I would also like to that the instructors and the slack community for heling me. Special praise to my mentor Gerard McBride.
+- I received inspiration for this project from Boutique Ado, I would also like to thank the instructors and the slack community for helping me. Special praise to my mentor Gerard McBride.
 
 

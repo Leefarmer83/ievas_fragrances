@@ -401,6 +401,11 @@ This module allows the site admin to capture subscriber email addresses, which c
     - When using the code from the project, it required a zip code, as this is for a UK business, I adapted the code accordingly.
 
 
+## Future testing
+
+Due to time restraints i did not use the test.py, this is something I will do in the future, here is the documentation i will follow: https://docs.djangoproject.com/en/3.2/topics/testing/
+
+
 
 
 
