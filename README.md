@@ -384,7 +384,7 @@ You will also need to set yourself up with a Stripe account to handle payments a
 
 ## Credits
 
-A huge amount of credit needs to go to the Code Institute, I followed their best practices when structuring my code, gaining insperation from the mini project (Boutique Ado) adjusting the code when needed. Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
+A huge amount of credit needs to go to the Code Institute, I followed their best practices when structuring my code, gaining inspiration from the mini project (Boutique Ado) adjusting the code when needed. Their code can be found [here](https://github.com/ckz8780/boutique_ado_v1/).
 
 I also used https://testdriven.io/blog/django-custom-user-model/ to help me with the models in newsletter and reviews.
 
@@ -394,10 +394,10 @@ I also used https://testdriven.io/blog/django-custom-user-model/ to help me with
 - The concept, design and text for this project was created by Lee Farmer and inspired by the mini project Boutique Ado.
 
 ### Media
-- The photos used in this site were obtained from Ievas Fragrances and i had permission to use them.
+- The photos used in this site were obtained from Ievas Fragrances and I had permission to use them.
 
 ### Acknowledgements
 
-- I received inspiration for this project from Boutique Ado, I would also like to thank the instructors and the slack community for helping me. Special praise to my mentor Gerard McBride.
+- I received inspiration for this project from Boutique Ado, I would also like to thank the instructors and the Slack community for helping me. Special praise to my mentor Gerard McBride.
 
 
