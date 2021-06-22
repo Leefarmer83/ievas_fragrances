@@ -223,7 +223,7 @@ When a user clicks on a subscribe menu option, a model launches. Users enter the
 - Order confirmation  email to the store owner.
 - Create a functionality for the owner to give discount codes to users.
 - Pagination - On both the products page and review tab.
-- Social media login.
+- Social media login. This was started and will be revisited.
 - In stock messaging.
 
 # Technologies Used
